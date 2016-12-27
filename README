@@ -1,0 +1,14 @@
+Zpevnik (songbook) -- by Martin, Petulka, Stiba, Tom
+=====================================================
+
+LaTeX packages required -- songs, xelatex, latex-music and some fonts.
+# sudo apt-get install texlive texlive-lang-czechslovak texlive-music texlive-xetex 
+# sudo apt-get install ttf-linux-libertine
+
+to add new song -- create new file for each song in LaTeX 'songs' package format and put it into the folder 'pisnicky' (see other songs as an example)
+
+to compile zpevnik -- go to main directory and run './make.sh' in command line -- updated 'zpevnik.pdf' will be created (list of songs and authors included)
+
+September 2012:
+to compile experimental kindle version -- go to main directory and run './make-kindle.sh' in command line -- updated 'zpevnik-kindle.html' and 'zpevnik-kindle.mobi' will be created in this case, 'kindlegen' application for converting html to mobi from amazon.com website is needed
+

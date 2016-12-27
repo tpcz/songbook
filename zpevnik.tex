@@ -1,0 +1,62 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[chorded]{songs}
+
+% START tex-live: problems with russian songs
+% \usepackage[russian,czech]{babel}
+% \usepackage[utf8]{inputenc}
+% \usepackage[T2A,T1]{fontenc}
+% END tex-live
+
+% START xetex:
+\usepackage{xltxtra}
+\setmainfont[Mapping=tex-text]{Linux Libertine O}
+% END xetex
+
+
+\usepackage{lscape}
+\usepackage{gchords}
+\usepackage{verbatim}
+\usepackage{longtable}
+
+\newindex{songindex}{songindex}
+\newauthorindex{authorindex}{authorindex}
+%\noversenumbers
+
+
+\evensidemargin=0cm
+\oddsidemargin=0cm
+%\topmargin=0cm
+\setlength{\topmargin}{14pt}
+%\setlength{\oddsidemargin}{32pt}
+%\setlength{\evensidemargin}{32pt}
+\textheight=23cm
+\textwidth=17cm
+
+\setlength\baselineadj{-\baselineskip}
+
+\begin{document}
+
+\showindex{Seznam písniček podle názvů}{songindex}
+\showindex{Seznam písniček podle autorů}{authorindex}
+
+\newpage
+
+%\songsection{Odrhovačky}
+
+\begin{songs}{authorindex,songindex}
+
+\input{list.tex}
+
+\end{songs}
+
+%\begin{landscape}
+
+%\songsection{Přehled akordů}
+%\centering
+%\vspace{1cm}
+
+%\input{chordlist.tex}
+
+%\end{landscape}
+
+\end{document}
